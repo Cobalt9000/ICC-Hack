@@ -437,11 +437,11 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa-solid{
+    .navbar .fa-solid{
         display: block;
         font-size: 25px;
     }
-    nav ul{
+    .navbar ul{
         background: navy;
         position: fixed;
         top: 0;
@@ -452,11 +452,11 @@ nav .fa-solid{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+    .navbar ul li{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
+    .navbar ul .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
