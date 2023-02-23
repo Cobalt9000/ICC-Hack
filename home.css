@@ -14,13 +14,13 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("images/Screenshot\ 2023-02-23\ 102008.png");
+    /* background: url("images/Screenshot\ 2023-02-23\ 102008.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.5;
     /* background-size: cover;
-    background-position: center; */
+    background-position: center;  */
     
 }
 .container{
@@ -78,12 +78,11 @@ display: flex;}
     margin: 9px;
 }
 .navbar ul li a:hover{
-    /* background-color: white; */
+    background-color: white; 
     text-decoration: underline;
     color: #fff;
-    /* color: black; */
+    color: black; 
 }
-
 .navbar ul li a::after{
     content: '';
     width: 0;
@@ -125,7 +124,14 @@ display: flex;}
 }
 
 .logo{
-    width: 140px;
+    margin: 10px 23px;
+    max-width: 80px;
+    max-height:80px;
+}
+.profile{
+    width: 60px;
+    height: 60px;
+    clip-path: circle();
 }
 
 nav ul li{
@@ -170,7 +176,7 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: red;
-} */
+}  */
 
 /* -------------------about--------------------- */
 #about{
@@ -427,21 +433,21 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/mobile.webp);
+    .section::before{
+        background-image: url("images/mobile.webp");
+        background-size: cover;
+        background-position: center;
     }
-    .header-text{
+    .header{
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1{
-        font-size: 30px;
-    }
-    .navbar .fa-solid{
+    
+    nav .fa-solid{
         display: block;
         font-size: 25px;
     }
-    .navbar ul{
+    nav ul{
         background: navy;
         position: fixed;
         top: 0;
@@ -452,11 +458,11 @@ nav .fa-solid{
         z-index: 2;
         transition: right 0.5s;
     }
-    .navbar ul li{
+    nav ul li{
         display: block;
         margin: 25px;
     }
-    .navbar ul .fa-solid{
+    nav ul .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
